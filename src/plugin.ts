@@ -12,9 +12,9 @@ export default () => ({
 
   transform(code, id) {
     const c = code
-      .split("//#region server")
+      .split(/\/\/\s*\#region\s+server/)
       .filter((v,i) => i > 0)
-      .map(v=>v.split("//#endregion server")[0])
+      .map(v=>v.split(/\/\/\\s*#endregion\s+server/)[0])
       .join("\n")
       .trim()
 
