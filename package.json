@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "tsup ./src/**/*.ts --dts --clean --format esm "
+    "build": "tsup ./src/**/*.ts --dts --clean --format esm",
+    "prepublishOnly": "pnpm build"
   },
   "exports": {
     "/plugin": "./dist/plugin.js",
