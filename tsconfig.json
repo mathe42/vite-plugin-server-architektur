@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "downlevelIteration": true,
+    "module": "NodeNext"
+  },
+}

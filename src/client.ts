@@ -1,5 +1,5 @@
 import { ref, shallowRef } from "vue";
-import type { BaseConfig } from "./shared";
+import type { BaseConfig } from "./shared.ts";
 
 
 class FetchContext<T> {

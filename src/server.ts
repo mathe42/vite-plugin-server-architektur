@@ -1,7 +1,8 @@
-import type { BaseConfig } from "./shared";
+import type { BaseConfig } from "./shared.ts";
 import express from "express";
+import {Express} from "express";
 
-export function setupExpress(app = express(), ctx: any, baseConfig: BaseConfig) {
+export function setupExpress(ctx: any, baseConfig: BaseConfig, app: Express = express()): {app: Express, defineServer: (id: string, ctx: any) => void} {
   const router = express.Router()
 
   app.use(baseConfig.baseUrl, router)
